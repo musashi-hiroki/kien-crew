@@ -32,7 +32,7 @@ function App() {
     return (
         <div style={{marginTop: navbarHeight}}>
             <Navbar id="header" ref={navbarRef} expand="sm" fixed="top" expanded={expanded} className="bg-black">
-                <img id="logo" className="m-2" style={{cursor: "pointer"}} src="/src/assets/logo.png" width="8%" height="8%" onClick={() => {setPage(<Top/>), setExpanded(!expanded)}}/>
+                <img id="logo" className="m-2" style={{cursor: "pointer"}} src="/src/assets/logo.png" width="8%" height="8%" onClick={() => {setPage(<Top/>), expanded ?? setExpanded(!expanded)}}/>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => {setExpanded(!expanded)}}/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto" style={{fontSize: "20px"}}>
