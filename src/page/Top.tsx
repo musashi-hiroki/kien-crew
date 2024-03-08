@@ -15,9 +15,8 @@ export default function Top(){
     return(
         <>
             <img src="/src/assets/kien_top.JPG" width={width} className="fade-in mb-5"/>
-            <WhatsUp/>
+            <WhatsUp hideTitle={true}/>
             <Profile/>
         </>
     )
-
 }

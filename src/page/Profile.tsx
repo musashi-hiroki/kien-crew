@@ -8,7 +8,11 @@ type profile = {
     image: string
     career: string[]
 }
-export default function Profile(){
+
+type Props = {
+    hideTitle?: boolean
+}
+export default function Profile(props: Props){
     const [modal, setModal] = useState<JSX.Element>(<></>)
     const ryoga: profile = {
         name: "Ryoga",
@@ -65,9 +69,6 @@ export default function Profile(){
                             <ul>{careerElements}</ul>
                         </div>
                     </div>
-                    <div>
-
-                    </div>
                 </Modal.Body>
             </Modal>
         )
@@ -77,17 +78,22 @@ export default function Profile(){
     }
     return (
         <>
-        <Container fluid className="mt-2 fade-in">
-            <Row>
-                <Col className="col-4">
-                    <div onClick={() => {openModal(ryoga)}}>
-                        <img src="/src/assets/ryoga.jpg" style={{width:"100%"}}></img>
-                        <p style={{fontSize: "2rem",color:"#fff"}}>Ryoga</p>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
-        {modal}
-      </>
+            <Container fluid className="mt-2 fade-in">
+                <Row style={{display: props.hideTitle ? "none" : ""}}>
+                    <Col>
+                        <div style={{fontSize:"5rem"}}>profile</div>
+                    </Col>
+                </Row>
+                <Row className="mt-1">
+                    <Col className="col-4">
+                        <div onClick={() => {openModal(ryoga)}}>
+                            <img src="/src/assets/ryoga.jpg" style={{width:"100%"}}></img>
+                            <p style={{fontSize: "2rem",color:"#fff"}}>Ryoga</p>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            {modal}
+        </>
     )
 }

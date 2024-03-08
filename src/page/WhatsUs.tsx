@@ -1,9 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function WhatsUp(){
+type Props = {
+    hideTitle?: boolean
+}
+export default function WhatsUp(props: Props){
     return(
         <Container fluid className="text-center fade-in">
-            <Row>
+            <Row style={{display: props.hideTitle ? "none" : ""}}>
                 <Col>
                 <div style={{fontSize:"5rem"}}>what`s us</div>
                 </Col>
@@ -24,8 +27,6 @@ export default function WhatsUp(){
                     </p>
                 </Col>
             </Row>
-
-
         </Container>
     )
 }
