@@ -60,6 +60,7 @@ export default function Profile(){
                         <img src={prof.image} width="60%" height="100%"></img>
                         <div className="ml-1">
                             <p>生年月日：{prof.birthDate}</p>
+                            <p>出身地：{prof.from}</p>
                             <p>【経歴】</p>
                             <ul>{careerElements}</ul>
                         </div>
