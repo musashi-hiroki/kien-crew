@@ -1,0 +1,49 @@
+{
+    "ryoga":{
+        "name": "Ryoga",
+        "birthDate": "1999.1.19",
+        "from":"神奈川",
+        "image": "/src/assets/ryoga.jpg",
+        "career": ["VIBE DANCE COMPETITION XXI 優勝",
+            "紅白歌合戦『群青-YOASOBI』出演",
+            "紅白歌合戦『Good Luck!! - SixTONES』出演",
+            "Nissy 『Trippin』 MV出演",
+            "DREAMS COME TRUE 『DREAMS COME TRUE WONDERLAND 2023』 全都市 OA & 本編出演",
+            "GROP CM 『GROP 舞踏会編』出演",
+            "SixTONES 『Losy』『共鳴』『Good Luck!!』『Party People』振付アシスタント",
+            "TXT 『MOA Diary』 振付アシスタント"
+        ]
+    },
+    "San":{
+        "name": "San.",
+        "birthDate": "1999.4.8",
+        "from":"シベリア",
+        "image": "/src/assets/san.jpg",
+        "career": ["小学6年生時に運動会のリレーでアンカーを務める",
+            "2016年 WOD日本予選3位",
+            "2021年、顎ひげともみあげを繋げることに成功"
+        ]
+    },
+    "masayoshi":{
+        "name": "優佳/まさよし",
+        "birthDate": "1998.4.1",
+        "from":"東京",
+        "image": "/src/assets/masayoshi.jpg",
+        "career": ["2009年 小平市空手道大会 形の部 優勝",
+            "2012年 東京都空手道選手権大会 女子 形の部 ベスト8",
+            "2018年Japan Dancers Championship 準優勝",
+            "2021年IZUMI COMPANY DANCE CONTEST final オーディエンス賞"
+        ]
+    },
+    "yuka":{
+        "name": "ゆかねぇ",
+        "birthDate": "1996.1.30",
+        "from":"神奈川",
+        "image": "/src/assets/yuka.jpg",
+        "career": ["2009年 小平市空手道大会 形の部 優勝",
+            "2012年 東京都空手道選手権大会 女子 形の部 ベスト8",
+            "2018年Japan Dancers Championship 準優勝",
+            "2021年IZUMI COMPANY DANCE CONTEST final オーディエンス賞"
+        ]
+    }
+}
